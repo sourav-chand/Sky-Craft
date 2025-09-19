@@ -17,8 +17,7 @@ export const assets = {
   logo,
   gradientBackground,
   user_group,
-  star_icon,
-  star_dull_icon,
+
   profile_img_1,
   arrow_icon,
 };
@@ -148,7 +147,7 @@ export const dummyPublishedCreationData = [
     user_id: "user_2yMX02PRbyMtQK6PebpjnxvRNIA",
     prompt:
       "Generate an image of A Boy is on Boat , and fishing in the style Anime style.",
-    content: ai_gen_img_1,
+    content: "",
     type: "image",
     publish: true,
     likes: [
@@ -163,7 +162,7 @@ export const dummyPublishedCreationData = [
     user_id: "user_2yMX02PRbyMtQK6PebpjnxvRNIA",
     prompt:
       "Generate an image of A Boy Riding a bicycle on road and bicycle is from year 2201  in the style Anime style.",
-    content: ai_gen_img_2,
+    content: "",
     type: "image",
     publish: true,
     likes: [
@@ -178,7 +177,7 @@ export const dummyPublishedCreationData = [
     user_id: "user_2yaW5EHzeDfQbXdAJWYFnZo2bje",
     prompt:
       "Generate an image of a boy riding a car on sky in the style Realistic.",
-    content: ai_gen_img_3,
+    content: "",
     type: "image",
     publish: true,
     likes: ["user_2yaW5EHzeDfQbXdAJWYFnZo2bje"],
