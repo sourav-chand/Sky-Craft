@@ -10,11 +10,10 @@ const app = express();
 
 await connectCloudinary();
 const allowedOrigins = [
-  "http://localhost:5173", // for local dev
-  `${process.env.CLIENT_URL}`,
-  "https://sky-craft-*.vercel.app" // production
+  "http://localhost:3000", // local dev
+  "https://sky-craft.vercel.app", // production frontend
+  "https://sky-craft-git-main-sourav-chands-projects.vercel.app" // preview frontend
 ];
-
 app.use(
   cors({
     origin: allowedOrigins,
