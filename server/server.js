@@ -11,7 +11,8 @@ const app = express();
 await connectCloudinary();
 const allowedOrigins = [
   "http://localhost:5173", // for local dev
-  `${process.env.CLIENT_URL}`, // production
+  `${process.env.CLIENT_URL}`,
+  "https://sky-craft-*.vercel.app" // production
 ];
 
 app.use(
