@@ -9,14 +9,17 @@ import userRouter from "./routes/userRoutes.js";
 const app = express();
 
 await connectCloudinary();
-console.log(process.env.CLIENT_URL)
+const allowedOrigins = [
+  "http://localhost:5173", // for local dev
+  `${process.env.CLIENT_URL}`, // production
+];
 
-app.use(cors(
-  {
-    origin: process.env.CLIENT_URL,
+app.use(
+  cors({
+    origin: allowedOrigins,
     credentials: true,
-  }
-));
+  })
+);
 app.use(express.json());
 app.use(clerkMiddleware());
 
