@@ -15,14 +15,14 @@ const Navbar = () => {
         src={assets.logo}
         alt="logo"
         
-        className=" w-40 sm:w-44 cursor-pointer"
+        className=" w-28 sm:w-44 cursor-pointer"
         onClick={() => navigate("/")}
       />
 
       {user ? (
         <UserButton />
       ) : (
-        <button onClick={openSignIn} className="flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5">
+        <button onClick={openSignIn} className="flex items-center gap-2  w-fit rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5">
           Get started <ArrowRight className="w-4 h-4" />
         </button>
       )}
