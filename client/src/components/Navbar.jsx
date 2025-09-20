@@ -15,7 +15,7 @@ const Navbar = () => {
         src={assets.logo}
         alt="logo"
         
-        className=" w-10  sm:w-44 cursor-pointer"
+        className=" w-50 sm:w-44 cursor-pointer"
         onClick={() => navigate("/")}
       />
 
